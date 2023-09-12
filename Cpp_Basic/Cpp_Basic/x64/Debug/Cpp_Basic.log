@@ -1,2 +1,39 @@
-﻿  Cpp_Basic.cpp
-  Cpp_Basic.vcxproj -> C:\Users\ASUS\Cpp_PL\CPP_Basic\Cpp_Basic\x64\Debug\Cpp_Basic.exe
+﻿  Ch05-1_Example.cpp
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ASUS\Downloads\CPPBasic\io.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(12,14): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(12,14): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(12,14): message : see usage of 'Counter'
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(16,9): warning C4552: '>>': result of expression not used
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(46,14): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(46,14): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(46,14): message : see usage of 'Counter'
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(50,9): warning C4552: '>>': result of expression not used
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(57,25): warning C4552: '<<': result of expression not used
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(78,19): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(78,19): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(78,19): message : see usage of 'Counter'
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(82,20): error C3863: array type 'int [Counter]' is not assignable
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(86,26): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(86,18): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(86,18): message : see usage of 'Counter'
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(89,9): warning C4552: '>>': result of expression not used
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(93,14): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(93,14): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(93,14): message : see usage of 'Counter'
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(96,14): error C3863: array type 'bool [Counter]' is not assignable
+C:\Users\ASUS\Downloads\CPPBasic\Ch05-1_Example.cpp(106,18): error C3863: array type 'bool [Counter]' is not assignable
+  Ch05-2_Sort.cpp
+C:\Users\ASUS\Downloads\CPPBasic\io.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  Ch06-1_Example.cpp
+C:\Users\ASUS\Downloads\CPPBasic\io.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(32,13): error C2131: expression did not evaluate to a constant
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(32,13): message : failure was caused by a read of a variable outside its lifetime
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(32,13): message : see usage of 'AlphaSize'
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(35,14): error C3863: array type 'int [AlphaSize]' is not assignable
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(47,20): error C3863: array type 'int [AlphaSize]' is not assignable
+C:\Users\ASUS\Downloads\CPPBasic\Ch06-1_Example.cpp(58,22): warning C4552: '<<': result of expression not used
+  Ch06_String.cpp
+C:\Users\ASUS\Downloads\CPPBasic\io.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+  Cpp_Basic.h
+  Generating Code...

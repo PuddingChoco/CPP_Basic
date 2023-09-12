@@ -127,7 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch02_Operation.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch03_Statement.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch04-1_Example.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch04-2_Example.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch05-1_Example.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch05-2_Sort.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch05_Array.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch06-1_Example.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch06_String.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\CPPBasic\Ch07_Structure.cpp" />
+    <ClCompile Include="Ch01_Variable.cpp" />
     <ClCompile Include="Cpp_Basic.cpp" />
+    <ClCompile Include="Cpp_Basic.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Guide.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
