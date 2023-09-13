@@ -9,11 +9,13 @@
 #define PLUS (2 + 3)
 
 
+
 int main()
 {
     cout << "Hello SeSac!\n";
 
-    VariableTypeCharacter();
+    //VariableTypeCharacter(); 
+    PointerDefine();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

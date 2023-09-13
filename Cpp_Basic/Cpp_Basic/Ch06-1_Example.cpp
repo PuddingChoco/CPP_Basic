@@ -29,7 +29,12 @@ void AlphaNumber()
 
   
   //bool Check[30];  이거 들어가있어서 오류났었음. 
-  int Check[AlphaSize]; // 30 대신 AlphaSize
+  
+  // 배열변수 선언시 크기 인덱스는 변수로 지정할 수 없음
+  //C++는 컴파일 언어다 => 컴파일 하는 시간에 배열 크기가 결정됨 => 크기를 변수로 지정하면 크기를 지정할 수 없음 => 즉, 숫자로 직접 넣어야함.
+  // int Check[AlphaSize];
+
+  int Check[26]; // 30 대신 AlphaSize  ---> 리플에서는 되었지만 원래는 안되는게 정상 VS Studio 에서는 오류남. 
   for(int i=0; i<AlphaSize; i++) // // 30 대신 AlphaSize (bool 로 했을땐 Check 배열 변수를 false 로 초기화 해줌)
   {
     Check[i] = -1;   // false 대신 -1로 해줌. 문제에 그렇게 나와있음. 

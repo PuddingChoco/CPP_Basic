@@ -1,4 +1,4 @@
-void OvenTime(); 
+﻿void OvenTime(); 
 void Quadrant();  // 원형 선언
 void LeapYear();
 void SizeComparison();
@@ -41,3 +41,4 @@ void Enum();
 void TwoDimension();
 
 void MaxMini();
+void PointerDefine();
