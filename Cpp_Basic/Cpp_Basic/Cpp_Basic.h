@@ -1,8 +1,8 @@
-﻿void OvenTime();
+void OvenTime(); 
 void Quadrant();  // 원형 선언
 void LeapYear();
 void SizeComparison();
-void InputOutput();
+void InputOutput();  
 void Variable();
 void VariableTypeNumber();
 void VariableTypeCharacter();
@@ -19,7 +19,7 @@ void StatementNestedIf();
 void StatementFor();
 void StatementWhile();
 
-int GuGuDan(int Dan);
+int GuGuDan(int Dan); 
 void VarScope(int Number);
 
 void MultipleCalculate();
