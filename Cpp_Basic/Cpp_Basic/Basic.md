@@ -226,8 +226,8 @@ struct Car    // Car 라는 타입을 만들은것임. 변수 X    ------ 여기
   char Color[30];
 }                                           ------ 여기까지는 구조체라고 볼 수도 있음.
 
-void Drive(char name[30]){}  --> 얘네들은 구조체 중괄호 { } 에 안들어가있고 따로 떨어져 있다. 즉, BMW 전용이 아니고 Jeep것도 아니고 '범용'이다. 
-void Break(char name[30]){}  ---> 누구를 브레이크 할건지 받은거라서 char name[30] 이라고 써준것. 
+void Drive(char name[30]){}   // 얘네들은 구조체 중괄호 { } 에 안들어가있고 따로 떨어져 있다. 즉, BMW 전용이 아니고 Jeep것도 아니고 '범용'이다. 
+void Break(char name[30]){}   // 누구를 브레이크 할건지 받은거라서 char name[30] 이라고 써준것. 
 void Parking(char name[30]){}
 void Rear(char name[30]){}     
 
@@ -235,13 +235,13 @@ Car BMW = { "X7", "xDrive40i", 2023, 23, "Black" }
 
 Car Jeep = { "Rubicon", "Mountain", 2021, 26, "Blue" }
 
-cout << BMW.year << endl;  --> BMW.year 는 BMW 거 맞음(구조체에 있으니). 근데 함수는 얘네들꺼 아님. 
+cout << BMW.year << endl;   // BMW.year 는 BMW 거 맞음(구조체에 있으니). 근데 함수는 얘네들꺼 아님. 
 
 cout << Jeep.year << endl; 
 
-Drive("X7")   --> 함수 쓰고싶다면, 그냥 호출하면 됨. 그냥 범용 버스같은, 그냥 갖다 쓰면 됨. 
+Drive("X7")   // 함수 쓰고싶다면, 그냥 호출하면 됨. 그냥 범용 버스같은, 그냥 갖다 쓰면 됨. 
 Drive("Rubicon") 
-// 위 Drive() 는 같은거다. 그냥 시내버스에 X7 태우고 Rubicon 태운것
+// 위 두 Drive() 는 같은거다. 그냥 시내버스에 X7 태우고 Rubicon 태운것
 
 ```
 
@@ -255,7 +255,7 @@ class Car
   int TireSize;
   char Color[30];
 
-void Drive(){}     ---> 이 함수들은 객체인스턴스의 전용이다. 
+void Drive(){}   // 이 함수들은 객체인스턴스의 전용이다. 
 void Break(){}
 void Parking(){}
 void Rear(){}   
@@ -263,12 +263,12 @@ void Rear(){}
 
 Car Sonata;
 
-cout << Sonata.year << endl;  --> Sonata.year 는 Sonata꺼. 
-Sonata.Drive() --> Sonata.Drive() 도 Sonata 꺼.  여기서의 Drive는 소나타 사람꺼. Ray 꺼랑 다름.
+cout << Sonata.year << endl;   // Sonata.year 는 Sonata꺼. 
+Sonata.Drive()   // Sonata.Drive() 도 Sonata 꺼.  여기서의 Drive는 소나타 사람꺼. Ray 꺼랑 다름.
 
 Car Ray;
 cout << Ray.year << endl;
-Ray.Drive() --> 여기서의 Drive는 레이 사람꺼다. 레이 전용임. 
+Ray.Drive()   // 여기서의 Drive는 레이 사람꺼다. 레이 전용임. 
 }
 
 
