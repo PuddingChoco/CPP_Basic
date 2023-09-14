@@ -1,2 +1,7 @@
-﻿  MiniProject_02.cpp
+﻿  Ch05-1_Example.cpp
+C:\Users\ASUS\Cpp_PL\CPP_Basic\Cpp_Basic\Cpp_Basic\Ch05-1_Example.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Ch09_Dynamic.cpp
+  Cpp_Basic.cpp
+  MiniProject_02.cpp
+  Generating Code...
   Cpp_Basic.vcxproj -> C:\Users\ASUS\Cpp_PL\CPP_Basic\Cpp_Basic\x64\Debug\Cpp_Basic.exe
