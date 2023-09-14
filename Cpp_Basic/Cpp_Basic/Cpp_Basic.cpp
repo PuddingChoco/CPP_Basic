@@ -6,6 +6,8 @@
 #include "Cpp_Basic.h"
 #include "io.h"
 
+#include "Ch10_Class.h"
+
 #define PLUS (2 + 3)
 
 
@@ -14,11 +16,12 @@ int main()
 {
     cout << "Hello SeSac!\n";
 
-    //VariableTypeCharacter(); 
-    //PointerDefine();
-    //DynamicVariable();
-    //BallInsert();
-    //BallSwap();
+    //DriveVelocity();  클래스 했으면, 이렇게 쓰면 안됨. 
+
+    Car Sonata(80); // Sonata의 Velocity가 80으로 되기 때문에 --->
+
+    Sonata.DriveVelocity(); //여기에 궃이 80 넣지 않아도 됨 
+    Sonata.DriveTime();     //여기에 궃이 80 넣지 않아도 됨 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

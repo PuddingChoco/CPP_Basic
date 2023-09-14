@@ -219,25 +219,25 @@ Function(10); ==> argument (실제 넣어주는 값, 함수호출할때 쓰임)
 ```
 struct Car    // Car 라는 타입을 만들은것임. 변수 X    ------ 여기서부터 
 {
-  char name[30];
-  char mode[30];
-  int year;
+  char Name[30];
+  char Mode[30];
+  int Year;
   int TireSize;
   char Color[30];
 }                                           ------ 여기까지는 구조체라고 볼 수도 있음.
 
-void Drive(char name[30]){}   // 얘네들은 구조체 중괄호 { } 에 안들어가있고 따로 떨어져 있다. 즉, BMW 전용이 아니고 Jeep것도 아니고 '범용'이다. 
-void Break(char name[30]){}   // 누구를 브레이크 할건지 받은거라서 char name[30] 이라고 써준것. 
-void Parking(char name[30]){}
-void Rear(char name[30]){}     
+void Drive(char Name[30]){}   // 얘네들은 구조체 중괄호 { } 에 안들어가있고 따로 떨어져 있다. 즉, BMW 전용이 아니고 Jeep것도 아니고 '범용'이다. 
+void Break(char Name[30]){}   // 누구를 브레이크 할건지 받은거라서 char name[30] 이라고 써준것. 
+void Parking(char Name[30]){}
+void Rear(char Name[30]){}     
 
 Car BMW = { "X7", "xDrive40i", 2023, 23, "Black" }  
 
 Car Jeep = { "Rubicon", "Mountain", 2021, 26, "Blue" }
 
-cout << BMW.year << endl;   // BMW.year 는 BMW 거 맞음(구조체에 있으니). 근데 함수는 얘네들꺼 아님. 
+cout << BMW.Year << endl;   // BMW.year 는 BMW 거 맞음(구조체에 있으니). 근데 함수는 얘네들꺼 아님. 
 
-cout << Jeep.year << endl; 
+cout << Jeep.Year << endl; 
 
 Drive("X7")   // 함수 쓰고싶다면, 그냥 호출하면 됨. 그냥 범용 버스같은, 그냥 갖다 쓰면 됨. 
 Drive("Rubicon") 
@@ -249,9 +249,9 @@ Drive("Rubicon")
 ```
 class Car
 {
-  char name[30];
-  char mode[30];
-  int year;
+  char Name[30];
+  char Mode[30];
+  int Year;
   int TireSize;
   char Color[30];
 
@@ -263,11 +263,11 @@ void Rear(){}
 
 Car Sonata;
 
-cout << Sonata.year << endl;   // Sonata.year 는 Sonata꺼. 
+cout << Sonata.Year << endl;   // Sonata.year 는 Sonata꺼. 
 Sonata.Drive()   // Sonata.Drive() 도 Sonata 꺼.  여기서의 Drive는 소나타 사람꺼. Ray 꺼랑 다름.
 
 Car Ray;
-cout << Ray.year << endl;
+cout << Ray.Year << endl;
 Ray.Drive()   // 여기서의 Drive는 레이 사람꺼다. 레이 전용임. 
 }
 
@@ -275,6 +275,19 @@ Ray.Drive()   // 여기서의 Drive는 레이 사람꺼다. 레이 전용임.
 정리) 구조체는 자기 함수가 없으니 시내버스로 다니는것
      클래스는 자기 함수가 있어서 자기차로 다니는것
 ```
+
+
+## 생성자(Constructor) 와 소멸자(Destructor)
+
+### 생성자 
+  - 클래스 타입의 변수가 생성될 때 초기화하는 함수 (클래스 객체가 처음 생성될떄, 클래스 안에 있는 프로퍼티와 메소드를 초기화 해준다. 생성자는 함수의 형태를 가지고 있다) 
+  - 초기화 기능 / 초기화가 진행된 후, 그것과 연계해서 다른 기능을 동작하게 할 수 있다. 
+
+### 소멸자
+  - 클래스 쓰임새가 다했거나 프로그램 종료시 생성되었던 클래스를 해제하는 함수. 
+  - 소멸 기능 / 클래스 소멸이 진행된 후, 그것과 연계해서 다른 기능을 동작하게 할 수 있다.
+
+
 
 
 
