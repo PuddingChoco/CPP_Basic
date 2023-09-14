@@ -139,14 +139,16 @@
     <ClCompile Include="Ch06_String.cpp" />
     <ClCompile Include="Ch07_Structure.cpp" />
     <ClCompile Include="Ch08_Pointer.cpp" />
+    <ClCompile Include="Ch09_Dynamic.cpp" />
     <ClCompile Include="Cpp_Basic.cpp" />
+    <ClCompile Include="MiniProject_02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cpp_Basic.h" />
     <ClInclude Include="io.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Guide.md" />
+    <None Include="Basic.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

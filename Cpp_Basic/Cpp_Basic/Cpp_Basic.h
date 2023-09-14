@@ -40,5 +40,8 @@ void AlphaNumber();
 void Enum();
 void TwoDimension();
 
-void MaxMini();
+//void MaxMini();
 void PointerDefine();
+void DynamicVariable();
+void BallInsert();
+void BallSwap();
