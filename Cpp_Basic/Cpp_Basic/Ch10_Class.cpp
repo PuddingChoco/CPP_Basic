@@ -1,7 +1,8 @@
 // 클래스는 얘만의 헤더파일이 필요함. 
 // 바디 선언은 여기에 하자.
-#include "Ch10_Class.h"
 #include <iostream>
+#include "Ch10_Class.h"
+
 using namespace std;
 
 // 함수 바디선언

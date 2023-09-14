@@ -1,5 +1,6 @@
 #include "io.h"
 
+// 문제1. 1차원 배열_공넣기   https://www.acmicpc.net/problem/10810
 void BallInsert()
 {	
 	int BasketCount;
@@ -19,6 +20,7 @@ void BallInsert()
 
 	// 3개의 값 받기 
 	int StartBasketNumber, EndBasketNumber, BallNumber;
+
 	for (int i = 0; i < InsertCount; i++)
 	{
 		cout << "시작 바구니 번호 : "; 
@@ -81,7 +83,7 @@ void BallSwap()
 
 	for (int i = 0; i < BasketCount; i++) // 배열개수가 되어야함. 
 	{
-		cout << pBasket << " : ";
+		cout << pBasket[i] << " : ";
 
 	}
 
