@@ -7,6 +7,12 @@
 #include "io.h"
 
 #include "Ch10_Class.h"
+#include "Vehicle.h"  // 이거 넣어줘야 Vehicle 이 인식이 됨.
+#include "Animal.h"
+#include "Bike.h"
+#include "Atv.h"
+#include "Arithmatic.h"
+#include "Auto.h"
 
 //#define PLUS (2 + 3)
 
@@ -16,7 +22,7 @@ int main()
     cout << "Hello SeSac!\n";
 
     //BallInsert();
-    BallSwap();
+    //BallSwap();
 
     //DriveVelocity();  클래스 했으면, 이렇게 쓰면 안됨. 
 
@@ -26,7 +32,73 @@ int main()
     Sonata.DriveVelocity(); //여기에 궃이 80 넣지 않아도 됨 
     Sonata.DriveTime();     //여기에 궃이 80 넣지 않아도 됨 
     */
-}
+
+    // class 정적 선언 
+    Vehicle Ray(2023, 12000000);  // 실체가 만들어짐. Ray는 이제 . 을 통해서 안에 있는 애들 쓸 수 있음.
+                                  // Ray 라는 '인스턴스' 생성되면서 값을 초기화 해줌.
+    // Ray.PrintYear();  // 함수 호출해줌.
+    Ray.PrintPrice(); // 얘는 왜 가능? -> public 이기 때문에. 
+    //Ray.PrintYear = 2022; // 클래스 외부(main)에서 접근 못함. Year는 private 이니까. <외부에서 수정 불가능>
+    Ray.Price = 10000000; // Vehicle.h 에서 int Price를 public 영역으로 옮기니까 접근 가능. <외부에서 수정 가능>
+
+    // 수정하고 싶을때 -> EditYear는 public 으로 되어있으니 접근해서 Year 바꿔줄 수 있음. 
+    Ray.EditYear(2021);
+    Ray.PrintYear();
+
+    Ray.SetYear(2021);
+
+    cout << Ray.GetYear() << endl;  // endl 대신 "\n" 써도 됨. 
+
+    // class 동적 선언(생성)
+    // int* a = new int;   *a = 10;  했던것처럼,
+    Animal* Dog = new Animal;   // Animal 은 클래스지만, int, float 처럼 타입으로 쓸 수 있다. 
+// *Dog.PrintFinger() 이렇게 안씀! 아래와 같이 쓴다.  쩜. 대신에 화살표 쓴다. 
+    Dog->PrintFinger();  // Dog 안에 들어있는 PrintFinger 
+    // 이런 화살표 본다면 포인터 생각하기, 앞에 있는 Dog 가 '동적 선언' 되어있구나 라고 생각하면 됨 = 클래스가 주소 담고 있구나.
+
+    delete Dog; // 동적생성 했으면 소멸도 해주기. 안해줘도 상관 없지만, 언리얼엔진에서, 게임에서는 해주는게 좋음. 안하면 memory overflow 오류 생길 수도 있음.
+    
+    // 자식 클래스 생성
+    Atv Moto;  // Atv 클래스 타입으로 Moto 만들어줌.
+
+    // 상속받은 Bike의 class 멤버
+    Moto.PrintTire();
+    cout << Moto.Price << endl;
+
+    // Atv class 멤버 
+    Moto.PrintPrice();
+
+    /*
+    // 함수 오버로딩
+    Arithmatic Expression;
+    Expression.Sum(10);
+    Expression.SumFloat(10.123);
+    */
+
+    // 함수 오버로딩
+    Arithmatic Expression;
+    Expression.Sum(10);
+
+    Expression.Sum(10.123f); // f 않넣으면 자동으로 double로 인식함. 
+
+    Expression.Sum(60, 70);
+
+    // 함수 오버라이딩
+    Moto.Print();
+
+    // 생성자가 명시적으로 선언
+    // 자식 클래스 선언 : 명시적 선언 
+    // Auto Mobile(); --> 얘는 다음에 다시 
+    
+    //Mobile().PrintPrice(); --> 얘는 다음에 다시 정정 
+
+}                    
+
+
+
+
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
