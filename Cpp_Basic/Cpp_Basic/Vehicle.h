@@ -12,8 +12,10 @@ public: // 생성자와 소멸자는 public 영역에 만들어져야한다.
 
 	int Price;
 
-	// Constructor  생성자 선언  생성자, 소멸자는 안만들어도 자동적으로 만들어지긴 함.
-	Vehicle(int _Year, int _Price); // 명시적으로 선언하는 경우 보려면, Cpp_Basic.cpp 91,92참고하기 
+	// Constructor  생성자 명시적 선언     생성자, 소멸자는 안만들어도 자동적으로 만들어지긴 함.
+	// 명시적으로 선언하는 경우 보려면, Cpp_Basic.cpp 91,92참고하기
+	Vehicle(); // Default Constructor 
+	Vehicle(int _Year, int _Price); // 생성자 오버로딩 
 
 
 	// Destructor  소멸자 선언

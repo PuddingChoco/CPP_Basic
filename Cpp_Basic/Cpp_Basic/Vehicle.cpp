@@ -5,6 +5,11 @@
 using namespace std;
 
 // Constructor 정의
+Vehicle::Vehicle()
+{
+	cout << "Vehicle Constructor" << endl;
+}
+
 // Constructor   생성자 (타입 선언 안함. 클래스 이름만 똑같이 써주면 됨)
 Vehicle::Vehicle(int _Year, int _Price)  // Vehicle:: 만 앞에 붙여주면 됨. 
 {                   // 보통 멤버변수(프로퍼티)와 이름 같게 써주지만,

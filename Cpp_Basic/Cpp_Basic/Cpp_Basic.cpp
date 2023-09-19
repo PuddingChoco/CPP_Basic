@@ -12,7 +12,7 @@
 #include "Bike.h"
 #include "Atv.h"
 #include "Arithmatic.h"
-#include "Auto.h"
+#include "AutoCar.h"
 
 //#define PLUS (2 + 3)
 
@@ -33,6 +33,8 @@ int main()
     Sonata.DriveTime();     //여기에 궃이 80 넣지 않아도 됨 
     */
 
+    cout << " ------- class 정적 선언 ------- " << endl;
+
     // class 정적 선언 
     Vehicle Ray(2023, 12000000);  // 실체가 만들어짐. Ray는 이제 . 을 통해서 안에 있는 애들 쓸 수 있음.
                                   // Ray 라는 '인스턴스' 생성되면서 값을 초기화 해줌.
@@ -49,6 +51,15 @@ int main()
 
     cout << Ray.GetYear() << endl;  // endl 대신 "\n" 써도 됨. 
 
+	
+    Vehicle Sonata; // 아무것도 없이 이렇게 선언도 가능함. 만약 Vehicle.h파일의 생성자가 Vehicle(int _Year, int _Price); 만 있으면 오류남.
+                     // 이거 되게 하려면 Vehicle(); 이런 default 생성자도 필요함. 
+                     // 암묵적으로 생성되는거랑 명시해주는거랑 다름. 
+    // x Vehicle(int _Year, int _Price); // 생성자 오버로딩 
+
+
+    cout << " ------- class 동적 선언 ------- " << endl;
+
     // class 동적 선언(생성)
     // int* a = new int;   *a = 10;  했던것처럼,
     Animal* Dog = new Animal;   // Animal 은 클래스지만, int, float 처럼 타입으로 쓸 수 있다. 
@@ -58,6 +69,8 @@ int main()
 
     delete Dog; // 동적생성 했으면 소멸도 해주기. 안해줘도 상관 없지만, 언리얼엔진에서, 게임에서는 해주는게 좋음. 안하면 memory overflow 오류 생길 수도 있음.
     
+    cout << " -------------상속-------------- " << endl;
+
     // 자식 클래스 생성
     Atv Moto;  // Atv 클래스 타입으로 Moto 만들어줌.
 
@@ -68,6 +81,7 @@ int main()
     // Atv class 멤버 
     Moto.PrintPrice();
 
+    cout << " -------------함수 오버로딩-------------- " << endl;
     /*
     // 함수 오버로딩
     Arithmatic Expression;
@@ -83,19 +97,32 @@ int main()
 
     Expression.Sum(60, 70);
 
+
+    cout << " ------------함수 오버라이딩------------- " << endl;
     // 함수 오버라이딩
     Moto.Print();
 
+   
     // 생성자가 명시적으로 선언
     // 자식 클래스 선언 : 명시적 선언 
     // Auto Mobile(); --> 얘는 다음에 다시 
+    cout << " -----------생성자 명시적 선언------------- " << endl;
     
-    //Mobile().PrintPrice(); --> 얘는 다음에 다시 정정 
+    Auto a;    
+    Auto Avante(2023, 1000000); 
+
+    cout << " ----------Array Class 출력-------------- " << endl;
+    ArrayClass();
+
+    cout << " ----------String Class 출력-------------- " << endl;
+    StringClass();
+
+
+    cout << " ----------Vector Class 출력-------------- " << endl;
+    VectorClass();
+
 
 }                    
-
-
-
 
 
 

@@ -45,3 +45,8 @@ void PointerDefine();
 void DynamicVariable();
 void BallInsert();
 void BallSwap();
+
+// C++ 에 있는 클래스들 가져다 쓰기
+void ArrayClass();
+void StringClass();
+void VectorClass();

@@ -78,6 +78,18 @@
     <ClCompile Include="Arithmatic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AutoCar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch11_ArrayClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch12_StringClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch13_Vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cpp_Basic.h">
@@ -104,7 +116,7 @@
     <ClInclude Include="Arithmatic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Auto.h">
+    <ClInclude Include="AutoCar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
