@@ -13,6 +13,10 @@
 #include "Atv.h"
 #include "Arithmatic.h"
 #include "AutoCar.h"
+#include "Ch14_VirtualParent.h"
+#include "Ch14_VirtualChild.h" // 가상함수_사실 부모꺼 말고 자식꺼만 포함하면 됨. 
+#include "Ch15_PureVirtualParent.h"
+#include "Ch15_PureVirtualChild.h"
 
 //#define PLUS (2 + 3)
 
@@ -108,8 +112,8 @@ int main()
     // Auto Mobile(); --> 얘는 다음에 다시 
     cout << " -----------생성자 명시적 선언------------- " << endl;
     
-    Auto a;    
-    Auto Avante(2023, 1000000); 
+    Auto Mobile;    
+    Auto Avante(2024, 1000000); 
 
     cout << " ----------Array Class 출력-------------- " << endl;
     ArrayClass();
@@ -121,7 +125,57 @@ int main()
     cout << " ----------Vector Class 출력-------------- " << endl;
     VectorClass();
 
+    cout << " ----------가상함수 출력-------------- " << endl;
 
+    //VirtualParent Parent;
+    //VirtualChild Child;
+
+    //Parent.PrintClass();
+
+    //Child.PrintClass(); // Overriding 작동 
+    // 정적 함수는 이미 메모리에 올라가 있어서, 부모것도 그대로 나옴.
+    
+    
+    
+    VirtualParent* Parent = new VirtualParent;
+    VirtualChild* Child = new VirtualChild;
+
+    Parent->PrintClass();
+    Child->PrintClass(); // Overriding 작동 
+
+    Parent = Child;  // 대입했지만, 정적으로 선언했기때문에 (?)
+
+    Parent->PrintClass();
+
+
+
+    VirtualParent2* Parent2 = new VirtualParent2;
+    VirtualChild2* Child2 = new VirtualChild2;
+
+    Parent2->PrintClass(); // 부모 클래스를 따로 쓸 수도 있다. 
+    Child2->PrintClass(); // Overriding 작동 
+
+    Parent2 = Child2;  
+
+    Parent2->PrintClass();
+    // 동적 함수는 실행될떄 작동함. 
+
+    cout << " -----------순수함수 출력-------------- " << endl;
+    // PureVirtualParent PureParent; => 추상클래스는 단독으로 객체 생성할 수 없음. 
+
+    // 추상 클래스를 상속받는 자식 클래스는 순수 가상함수를 재정의 해야함 ---> 안해서 오류난거.
+    PureVirtualChild PureChild; 
+
+    PureChild.Print();
+    PureChild.PrintClass();
+
+    cout << " ------------함수 오버로딩-------------- " << endl;
+    cout << SumNumber(3, 2) << endl;
+    cout << SumNumber(3.23f, 5.645f) << endl;
+
+    cout << " ---------------템플릿----------------- " << endl;
+    cout << SumType(10, 20) << endl;
+    cout << SumType(10.567, 20.321) << endl;
 }                    
 
 

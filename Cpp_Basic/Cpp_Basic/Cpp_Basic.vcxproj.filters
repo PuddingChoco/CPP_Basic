@@ -90,6 +90,21 @@
     <ClCompile Include="Ch13_Vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Ch14_VirtualParent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch14_VirtualChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch15_PureVirtualChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch16_Template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cpp_Basic.h">
@@ -117,6 +132,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AutoCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch14_VirtualParent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch14_VirtualChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch15_PureVirtualParent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch15_PureVirtualChild.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
