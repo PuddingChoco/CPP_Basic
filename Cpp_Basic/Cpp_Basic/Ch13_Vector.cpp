@@ -1,6 +1,6 @@
 #include "io.h"
 
-#include <vector>
+#include <vector> // vector 클래스 - 동적생성 
 
 using namespace std;
 

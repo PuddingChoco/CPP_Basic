@@ -1,5 +1,5 @@
 #include "io.h"
-#include <array> // Array 라는 헤더파일
+#include <array> // array 클래스 - 정적생성     쓰고싶으면, array 라는 헤더파일 포함시켜줘야함.
 
 using namespace std; // ArrayClass()는 std namespace 사용해야하므로 이거 써줌. 이거 없으면 std::array 이렇게 써야함(9번째 줄)
 

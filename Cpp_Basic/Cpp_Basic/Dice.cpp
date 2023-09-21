@@ -13,5 +13,5 @@ void Dice(int a, int b, int c, int d)
 
 	// 5번째 
 	if (a != b && b != c && c != d && a != c && b != d && a != d) {} //다른거 비교할때는 다 비교 해줘야함.
-
+	// 등등...
 }
